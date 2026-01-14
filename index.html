@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+
+</head>
+<script>
+  const skills = document.getElementById("skills");
+  let animated = false;
+
+  window.addEventListener("scroll", () => {
+    const top = skills.getBoundingClientRect().top;
+    if (top < window.innerHeight - 100 && !animated) {
+      skills.classList.add("skills-active");
+      animated = true;
+    }
+  });
+</script>
+
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-avatar">
+      <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="Profile Photo">
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <span class="hero-role">ASPIRING DEVELOPER</span>
+    <h1>Hi, I'm <strong>Akshansh Srivastava</strong></h1>
+    <p class="hero-subtext">A passionate beginner building modern digital experiences and bringing ideas to life through code.</p>
+    <div class="hero-badges">
+  <span>📍 India</span>
+  <span>🎓 B.Tech @ VIT Bhopal</span>
+
+</div>
+
+
+    <div class="hero-buttons">
+      <a href="#contact" class="btn-primary">Get In Touch</a>
+      <a href="Akshansh Srivastava Resume (2).pdf" target="_blank" class="btn-secondary">Download Resume</a>
+    </div>
+    <p class="social-label">Connect With Me</p>
+
+<div class="hero-social">
+  <a href="https://github.com/akshansh2404" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="icon">
+  </a>
+
+  <a href="https://www.linkedin.com/in/akshansh-srivastava-016335326?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" class="icon">
+  </a>
+
+  <a href="mailto:akshanshsrivastva2249w@gmail.com">
+    <img src="https://img.icons8.com/ios-glyphs/30/ffffff/new-post.png" class="mail-icon">
+  </a>
+</div>
+
+
+
+   
+</section>
+<div class="wave-divider">
+  <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#fafafa" d="M0 48l60 10.7C120 69 240 91 360 85.3 480 80 600 48 720 42.7 840 37 960 59 1080 74.7 1200 91 1320 101 1380 106.7l60 5.3V0H0z"/>
+  </svg>
+</div>
+
+
+
+
+<!-- ABOUT & SKILLS -->
+<section id="about-me" class="p-10 bg-gray-50 rounded-xl shadow-md">
+  <h2 class="text-3xl font-bold mb-4">About Me</h2>
+  <p class="text-lg mb-4">
+    Hi, I'm <strong>Akshansh Srivastava</strong>, a B.Tech student specializing in Computer Science and E-Commerce Technology at VIT Bhopal. I’m passionate about building scalable software, exploring data analytics, and creating dynamic web applications.
+  </p>
+  <p class="text-lg mb-4">
+    I enjoy collaborating with like-minded professionals, learning new technologies, and staying updated with the latest industry trends to make meaningful contributions in the tech world.
+  </p>
+  <ul class="grid grid-cols-2 gap-2 list-disc list-inside text-gray-700">
+    <li>💻 Web Development</li>
+    <li>📊 Data Analytics</li>
+    <li>⚡ Problem Solving</li>
+    <li>🛒 E-Commerce Solutions</li>
+  </ul>
+</section>
+
+<section id="skills">
+  <h2>What I'm Learning</h2>
+  <p class="section-subtitle">Technologies and languages I'm currently building skills in.</p>
+
+  <div class="skills-grid">
+
+    <div class="skill">
+      <div class="skill-header">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML Logo">
+        <span>HTML & CSS</span>
+      </div>
+      <div class="bar">
+        <div class="fill html"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-header">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS Logo">
+        <span>JavaScript</span>
+      </div>
+      <div class="bar">
+        <div class="fill js"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-header">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java Logo">
+        <span>Java</span>
+      </div>
+      <div class="bar">
+        <div class="fill java"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-header">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python Logo">
+        <span>Python</span>
+      </div>
+      <div class="bar">
+        <div class="fill python"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2 class="section-heading">Practice Work</h2>
+
+  <div class="projects-grid">
+
+    <a class="project-card" href="YOUR_GITHUB_LINK" target="_blank">
+      <img src="download2.jpg" alt="">
+      <div class="project-info">
+        <div class="project-title">Campus Course Records Manager</div>
+        <div class="project-tech">Java / JDBC</div>
+      </div>
+    </a>
+
+    <a class="project-card" href="YOUR_GITHUB_LINK" target="_blank">
+      <img src="ambulance.jpg" alt="">
+      <div class="project-info">
+        <div class="project-title">Rapid Care Ambulance Booking</div>
+        <div class="project-tech">HTML / CSS / JavaScript</div>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact-info">
+    <p class="section-tag">GET IN TOUCH</p>
+    <h2>Let's Connect</h2>
+    <p>
+      Whether it's a learning opportunity, junior position, or small project,
+      I'd love to connect.
+    </p>
+
+    <p><strong>Email:</strong> akshanshsrivastva2249w@gmail.com</p>
+    <p><strong>Location:</strong> Noida,Uttar Pradesh</p>
+  </div>
+
+<form
+  class="contact-form"
+  action="https://formspree.io/f/xgooerek"
+  method="POST"
+>
+  <input type="text" name="name" placeholder="Your name" required>
+  <input type="email" name="email" placeholder="Your email" required>
+  <textarea name="message" placeholder="Your message..." required></textarea>
+
+  <button type="submit">Send Message →</button>
+</form>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Portfolio. Built with passion.</p>
+  <div class="footer-links">
+    <a href="#">GitHub</a>
+    <a href="#">LinkedIn</a>
+    <a href="#">Twitter</a>
+  </div>
+</footer>
+
+</body>
+</html>
