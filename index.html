@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./fixed_style (1).css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
@@ -102,80 +102,388 @@
   </ul>
 </section>
 
+<!-- RADAR SKILLS SECTION -->
 <section id="skills">
-  <h2>What I'm Learning</h2>
-  <p class="section-subtitle">Technologies and languages I'm currently building skills in.</p>
 
-  <div class="skills-grid">
+  <div class="skills-header">
+    <p class="skills-tag">SKILL SYSTEM</p>
+    <h2>What I'm Learning</h2>
+    <p class="skills-subtitle">
+      Technologies and languages I'm currently building skills in.
+    </p>
+  </div>
 
-    <div class="skill">
-      <div class="skill-header">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML Logo">
-        <span>HTML & CSS</span>
+  <div class="radar-grid">
+
+    <!-- HTML -->
+    <div class="radar-card">
+      <div class="circle-wrap">
+
+        <svg class="circle-svg" width="180" height="180">
+
+          <circle class="bg"
+            cx="90"
+            cy="90"
+            r="70">
+          </circle>
+
+          <circle class="progress html-circle"
+            cx="90"
+            cy="90"
+            r="70">
+          </circle>
+
+        </svg>
+
+        <div class="circle-content">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+          <h3>75%</h3>
+        </div>
+
       </div>
-      <div class="bar">
-        <div class="fill html"></div>
-      </div>
+
+      <h4>HTML & CSS</h4>
+      <p>Core Markup & Styling</p>
     </div>
 
-    <div class="skill">
-      <div class="skill-header">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS Logo">
-        <span>JavaScript</span>
+    <!-- JS -->
+    <div class="radar-card">
+      <div class="circle-wrap">
+
+        <svg class="circle-svg" width="180" height="180">
+
+          <circle class="bg"
+            cx="90"
+            cy="90"
+            r="70">
+          </circle>
+
+          <circle class="progress js-circle"
+            cx="90"
+            cy="90"
+            r="70">
+          </circle>
+
+        </svg>
+
+        <div class="circle-content">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+          <h3>60%</h3>
+        </div>
+
       </div>
-      <div class="bar">
-        <div class="fill js"></div>
-      </div>
+
+      <h4>JavaScript</h4>
+      <p>Logic & Interactivity</p>
     </div>
 
-    <div class="skill">
-      <div class="skill-header">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java Logo">
-        <span>Java</span>
+    <!-- JAVA -->
+    <div class="radar-card">
+      <div class="circle-wrap">
+
+        <svg class="circle-svg" width="180" height="180">
+
+          <circle class="bg"
+            cx="90"
+            cy="90"
+            r="70">
+          </circle>
+
+          <circle class="progress java-circle"
+            cx="90"
+            cy="90"
+            r="70">
+          </circle>
+
+        </svg>
+
+        <div class="circle-content">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
+          <h3>50%</h3>
+        </div>
+
       </div>
-      <div class="bar">
-        <div class="fill java"></div>
-      </div>
+
+      <h4>Java</h4>
+      <p>Programming Language</p>
     </div>
 
-    <div class="skill">
-      <div class="skill-header">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python Logo">
-        <span>Python</span>
+    <!-- PYTHON -->
+    <div class="radar-card">
+      <div class="circle-wrap">
+
+        <svg class="circle-svg" width="180" height="180">
+
+          <circle class="bg"
+            cx="90"
+            cy="90"
+            r="70">
+          </circle>
+
+          <circle class="progress python-circle"
+            cx="90"
+            cy="90"
+            r="70">
+          </circle>
+
+        </svg>
+
+        <div class="circle-content">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
+          <h3>65%</h3>
+        </div>
+
       </div>
-      <div class="bar">
-        <div class="fill python"></div>
-      </div>
+
+      <h4>Python</h4>
+      <p>Data & Automation</p>
     </div>
 
   </div>
+
 </section>
 
 
-
 <!-- PROJECTS -->
+<!-- MISSION CONTROL PROJECTS -->
 <section id="projects">
-  <h2 class="section-heading">Practice Work</h2>
+
+  <div class="projects-header">
+    <p class="system-label">SYSTEM DASHBOARD</p>
+    <h2 class="section-heading">Mission Control</h2>
+    <p class="projects-subtitle">
+      Systems and applications I’ve built while learning and experimenting with technology.
+    </p>
+  </div>
 
   <div class="projects-grid">
 
-    <a class="project-card" href="https://github.com/akshansh2404/Project-Statement-Campus-Course-Records-Manager-CCRM-" target="_blank">
-      <img src="download2.jpg" alt="">
-      <div class="project-info">
-        <div class="project-title">Campus Course Records Manager</div>
-        <div class="project-tech">Java / JDBC</div>
+  <!-- PROJECT 1 -->
+  <div class="mission-card">
+    <div class="terminal-top">
+      <div class="terminal-dots">
+        <span class="red"></span>
+        <span class="yellow"></span>
+        <span class="green"></span>
       </div>
-    </a>
 
-    <a class="project-card" href="https://github.com/akshansh2404/Rapid-Care-Ambulance-Online-Ambulance-Booking-Service-" target="_blank">
-      <img src="ambulance.jpg" alt="">
-      <div class="project-info">
-        <div class="project-title">Rapid Care Ambulance Booking</div>
-        <div class="project-tech">HTML / CSS / JavaScript</div>
+      <div class="system-status">
+        <span class="status-dot"></span>
+        SYSTEM ACTIVE
       </div>
-    </a>
+    </div>
 
+    <div class="mission-content">
+
+      <h3>Campus Course Records Manager</h3>
+
+      <p class="mission-desc">
+        Academic management system for handling student records,
+        courses, and database operations efficiently.
+      </p>
+
+      <div class="tech-stack">
+        <span>JAVA</span>
+        <span>JDBC</span>
+        <span>MYSQL</span>
+      </div>
+
+      <div class="mission-stats">
+        <div>
+          <small>STATUS</small>
+          <strong>ONLINE</strong>
+        </div>
+
+        <div>
+          <small>TYPE</small>
+          <strong>DESKTOP APP</strong>
+        </div>
+
+        <div>
+          <small>BUILD</small>
+          <strong>v2.1</strong>
+        </div>
+      </div>
+
+      <div class="mission-buttons">
+        <a href="https://github.com/akshansh2404/Project-Statement-Campus-Course-Records-Manager-CCRM-" target="_blank">
+          VIEW CODE ↗
+        </a>
+      </div>
+
+    </div>
   </div>
+
+  <!-- PROJECT 2 -->
+  <div class="mission-card">
+    <div class="terminal-top">
+      <div class="terminal-dots">
+        <span class="red"></span>
+        <span class="yellow"></span>
+        <span class="green"></span>
+      </div>
+
+      <div class="system-status">
+        <span class="status-dot"></span>
+        SYSTEM ACTIVE
+      </div>
+    </div>
+
+    <div class="mission-content">
+
+      <h3>Rapid Care Ambulance Booking</h3>
+
+      <p class="mission-desc">
+        Emergency ambulance booking platform with responsive UI
+        and quick booking workflow simulation.
+      </p>
+
+      <div class="tech-stack">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JAVASCRIPT</span>
+      </div>
+
+      <div class="mission-stats">
+        <div>
+          <small>STATUS</small>
+          <strong>ONLINE</strong>
+        </div>
+
+        <div>
+          <small>TYPE</small>
+          <strong>WEB APP</strong>
+        </div>
+
+        <div>
+          <small>BUILD</small>
+          <strong>v1.4</strong>
+        </div>
+      </div>
+
+      <div class="mission-buttons">
+        <a href="https://github.com/akshansh2404/Rapid-Care-Ambulance-Online-Ambulance-Booking-Service-" target="_blank">
+          VIEW CODE ↗
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- PROJECT 3 -->
+  <div class="mission-card">
+    <div class="terminal-top">
+      <div class="terminal-dots">
+        <span class="red"></span>
+        <span class="yellow"></span>
+        <span class="green"></span>
+      </div>
+
+      <div class="system-status">
+        <span class="status-dot"></span>
+        SYSTEM ACTIVE
+      </div>
+    </div>
+
+    <div class="mission-content">
+
+      <h3>Weather Intelligence Dashboard</h3>
+
+      <p class="mission-desc">
+        Dynamic weather application with animated UI,
+        live temperature updates and cloud effects.
+      </p>
+
+      <div class="tech-stack">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JAVASCRIPT</span>
+        <span>API</span>
+      </div>
+
+      <div class="mission-stats">
+        <div>
+          <small>STATUS</small>
+          <strong>ONLINE</strong>
+        </div>
+
+        <div>
+          <small>TYPE</small>
+          <strong>WEB APP</strong>
+        </div>
+
+        <div>
+          <small>BUILD</small>
+          <strong>v3.0</strong>
+        </div>
+      </div>
+
+      <div class="mission-buttons">
+        <a href="https://github.com/akshansh2404/Weather-Forecast-Dashboard" target="_blank">
+          VIEW CODE ↗
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- PROJECT 4 -->
+  <div class="mission-card">
+    <div class="terminal-top">
+      <div class="terminal-dots">
+        <span class="red"></span>
+        <span class="yellow"></span>
+        <span class="green"></span>
+      </div>
+
+      <div class="system-status">
+        <span class="status-dot"></span>
+        SYSTEM ACTIVE
+      </div>
+    </div>
+
+    <div class="mission-content">
+
+      <h3>Life Link</h3>
+
+      <p class="mission-desc">
+        LifeLink is a full-stack web application designed to connect blood and organ donors with people in urgent need.
+      </p>
+
+      <div class="tech-stack">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JAVASCRIPT</span>
+        <span>UI/UX</span>
+      </div>
+
+      <div class="mission-stats">
+        <div>
+          <small>STATUS</small>
+          <strong>DEPLOYED</strong>
+        </div>
+
+        <div>
+          <small>TYPE</small>
+          <strong>WEB APP</strong>
+        </div>
+
+        <div>
+          <small>BUILD</small>
+          <strong>v4.2</strong>
+        </div>
+      </div>
+
+      <div class="mission-buttons">
+        <a href="https://github.com/akshansh2404/LifeLink" target="_blank">
+          VIEW CODE ↗
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+</div>
 </section>
 
 <!-- CONTACT -->
