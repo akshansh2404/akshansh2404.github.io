@@ -2,91 +2,86 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="./fixed_style (1).css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Akshansh Srivastava, B.Tech student at VIT Bhopal." />
+  <title>Akshansh Srivastava | Portfolio</title>
 
+  <!-- Your original stylesheet (keep this file in the same folder) -->
+  <link rel="stylesheet" href="./fixed_style%20(1).css" />
+  <!-- Extra styles: About, Education, nav, footer. Must come AFTER the main stylesheet -->
+  <link rel="stylesheet" href="./about-fix.css" />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
-<script>
-  const skills = document.getElementById("skills");
-  let animated = false;
-
-  window.addEventListener("scroll", () => {
-    const top = skills.getBoundingClientRect().top;
-    if (top < window.innerHeight - 100 && !animated) {
-      skills.classList.add("skills-active");
-      animated = true;
-    }
-  });
-</script>
-
 
 <body>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-left">
-    <div class="hero-avatar">
-      <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="Profile Photo">
+<!-- ================= HEADER / HERO ================= -->
+<header class="site-header">
+
+  <nav class="top-nav" aria-label="Main navigation">
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-left">
+      <div class="hero-avatar">
+        <!-- Put your photo in the same folder and name it profile.jpg -->
+        <img src="profile.jpg.jpg" alt="Profile photo of Akshansh Srivastava">
+      </div>
     </div>
-  </div>
 
-  <div class="hero-right">
-    <span class="hero-role">ASPIRING DEVELOPER</span>
-    <h1>Hi, I'm <strong>Akshansh Srivastava</strong></h1>
-    <p class="hero-subtext">A passionate beginner building modern digital experiences and bringing ideas to life through code.</p>
-    <div class="hero-badges">
-  <span>📍 India</span>
-  <span>🎓 B.Tech @ VIT Bhopal</span>
+    <div class="hero-right">
+      <span class="hero-role">ASPIRING DEVELOPER</span>
+      <h1>Hi, I'm <strong>Akshansh Srivastava</strong></h1>
+      <p class="hero-subtext">A passionate beginner building modern digital experiences and bringing ideas to life through code.</p>
 
-</div>
+      <div class="hero-badges">
+        <span>📍 India</span>
+        <span>🎓 B.Tech @ VIT Bhopal</span>
+      </div>
 
+      <div class="hero-buttons">
+        <a href="#contact" class="btn-primary">Get In Touch</a>
+        <a href="Akshansh%20updated%20resume.pdf" target="_blank" rel="noopener" class="btn-secondary">Download Resume</a>
+      </div>
 
-    <div class="hero-buttons">
-      <a href="#contact" class="btn-primary">Get In Touch</a>
-      <a href="Akshansh updated resume.pdf" target="_blank" class="btn-secondary">Download Resume</a>
+      <p class="social-label">Connect With Me</p>
+
+      <div class="hero-social">
+        <a href="https://github.com/akshansh2404" target="_blank" rel="noopener" aria-label="GitHub">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="icon" alt="GitHub">
+        </a>
+
+        <a href="https://www.linkedin.com/in/akshansh-srivastava-016335326" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" class="icon" alt="LinkedIn">
+        </a>
+
+        <a href="mailto:akshanshsrivastva2249w@gmail.com" aria-label="Email">
+          <img src="https://img.icons8.com/ios-glyphs/30/ffffff/new-post.png" class="mail-icon" alt="Email">
+        </a>
+      </div>
     </div>
-    <p class="social-label">Connect With Me</p>
+  </section>
+</header>
 
-<div class="hero-social">
-  <a href="https://github.com/akshansh2404" target="_blank">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="icon">
-  </a>
-
-  <a href="https://www.linkedin.com/in/akshansh-srivastava-016335326?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" class="icon">
-  </a>
-
-  <a href="mailto:akshanshsrivastva2249w@gmail.com">
-    <img src="https://img.icons8.com/ios-glyphs/30/ffffff/new-post.png" class="mail-icon">
-  </a>
-</div>
-
-
-
-   
-</section>
 <div class="wave-divider">
-  <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg">
+  <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
     <path fill="#fafafa" d="M0 48l60 10.7C120 69 240 91 360 85.3 480 80 600 48 720 42.7 840 37 960 59 1080 74.7 1200 91 1320 101 1380 106.7l60 5.3V0H0z"/>
   </svg>
 </div>
 
+<main>
 
-
-
-<!-- ABOUT & SKILLS -->
-<section id="about">
+<!-- ================= ABOUT ================= -->
+<section id="about" class="about-section">
 
   <div class="about-top">
     <p class="about-tag">&lt; ABOUT_ME /&gt;</p>
@@ -94,24 +89,17 @@
   </div>
 
   <div class="about-grid">
-     <!-- LEFT -->
+
+    <!-- LEFT -->
     <div class="about-left">
 
-      <p class="about-init">
-        > INITIALIZING_PERSONAL_INFO...
-      </p>
+      <p class="about-init">&gt; INITIALIZING_PERSONAL_INFO...</p>
 
-      <h2 class="about-heading">
-        ABOUT <span>ME</span>
-      </h2>
-
+      <h2 class="about-heading">ABOUT <span>ME</span></h2>
       <div class="heading-line"></div>
 
       <div class="about-text">
-
-        <p>
-          Hi, I’m <strong>Akshansh Srivastava</strong>
-        </p>
+        <p>Hi, I’m <strong>Akshansh Srivastava</strong></p>
 
         <p>
           A B.Tech student specializing in Computer Science and
@@ -126,50 +114,32 @@
           the latest industry trends to make meaningful
           contributions in the tech world.
         </p>
-
       </div>
 
-      <!-- CURRENT FOCUS -->
       <div class="focus-box">
-
-        <p class="focus-title">
-          > CURRENTLY_FOCUSED_ON
-        </p>
-
+        <p class="focus-title">&gt; CURRENTLY_FOCUSED_ON</p>
         <p>
           Building impactful projects, improving problem solving skills
           and learning new technologies.
         </p>
-
       </div>
 
-      <!-- SOCIALS -->
       <div class="connect-section">
-
-        <p class="connect-title">
-          LET'S CONNECT
-        </p>
-
+        <p class="connect-title">LET'S CONNECT</p>
         <div class="connect-icons">
-
-          <a href="#">
+          <a href="https://github.com/akshansh2404" target="_blank" rel="noopener" aria-label="GitHub">
             <i class="fab fa-github"></i>
           </a>
-
-          <a href="#">
+          <a href="https://www.linkedin.com/in/akshansh-srivastava-016335326" target="_blank" rel="noopener" aria-label="LinkedIn">
             <i class="fab fa-linkedin-in"></i>
           </a>
-
-          <a href="#">
+          <a href="mailto:akshanshsrivastva2249w@gmail.com" aria-label="Email">
             <i class="far fa-envelope"></i>
           </a>
-
-          <a href="#">
+          <a href="Akshansh%20updated%20resume.pdf" target="_blank" rel="noopener" aria-label="Resume">
             <i class="far fa-file-alt"></i>
           </a>
-
         </div>
-
       </div>
 
     </div>
@@ -177,130 +147,77 @@
     <!-- RIGHT -->
     <div class="about-right">
 
-      <!-- TERMINAL CARD -->
       <div class="dev-card">
-
         <div class="dev-top">
-
           <div class="terminal-dots">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span></span><span></span><span></span>
           </div>
-
           <p>DEVELOPER_MODE &gt;_</p>
-
         </div>
 
         <div class="dev-content">
-
-          <div class="dev-row">
-            <span>NAME</span>
-            <p>Akshansh Srivastava</p>
-          </div>
-
-          <div class="dev-row">
-            <span>ROLE</span>
-            <p>Aspiring Developer</p>
-          </div>
-
-          <div class="dev-row">
-            <span>EDUCATION</span>
-            <p>B.Tech @ VIT Bhopal</p>
-          </div>
-
-          <div class="dev-row">
-            <span>BRANCH</span>
-            <p>CSE + E-Commerce</p>
-          </div>
-
-          <div class="dev-row">
-            <span>LOCATION</span>
-            <p>Bhopal, India</p>
-          </div>
-
-          <div class="dev-row">
-            <span>STATUS</span>
-            <p>Learning & Building</p>
-          </div>
-
-          <div class="dev-row">
-            <span>AVAILABILITY</span>
-            <p>Open to Opportunities</p>
-          </div>
-
+          <div class="dev-row"><span>NAME</span><p>Akshansh Srivastava</p></div>
+          <div class="dev-row"><span>ROLE</span><p>Aspiring Developer</p></div>
+          <div class="dev-row"><span>EDUCATION</span><p>B.Tech @ VIT Bhopal</p></div>
+          <div class="dev-row"><span>BRANCH</span><p>CSE + E-Commerce</p></div>
+          <div class="dev-row"><span>LOCATION</span><p>Bhopal, India</p></div>
+          <div class="dev-row"><span>STATUS</span><p>Learning &amp; Building</p></div>
+          <div class="dev-row"><span>AVAILABILITY</span><p>Open to Opportunities</p></div>
         </div>
 
-        <p class="dev-footer">
-          // always learning. always building.
-        </p>
-
+        <p class="dev-footer">// always learning. always building.</p>
       </div>
 
-      <!-- SKILL CARDS -->
       <div class="work-section">
-
         <h3>I WORK WITH</h3>
-
         <div class="work-grid">
-
-          <div class="work-card">
-            <i class="fas fa-code"></i>
-            <p>Web Development</p>
-          </div>
-
-          <div class="work-card">
-            <i class="fas fa-chart-bar"></i>
-            <p>Data Analytics</p>
-          </div>
-
-          <div class="work-card">
-            <i class="fas fa-bolt"></i>
-            <p>Problem Solving</p>
-          </div>
-
-          <div class="work-card">
-            <i class="fas fa-shopping-cart"></i>
-            <p>E-Commerce</p>
-          </div>
-
+          <div class="work-card"><i class="fas fa-code"></i><p>Web Development</p></div>
+          <div class="work-card"><i class="fas fa-chart-bar"></i><p>Data Analytics</p></div>
+          <div class="work-card"><i class="fas fa-bolt"></i><p>Problem Solving</p></div>
+          <div class="work-card"><i class="fas fa-shopping-cart"></i><p>E-Commerce</p></div>
         </div>
-
       </div>
 
-      <!-- STATS -->
       <div class="stats-box">
-
-        <div class="stat">
-          <h4>02+</h4>
-          <p>Projects Completed</p>
-        </div>
-
-        <div class="stat">
-          <h4>05+</h4>
-          <p>Technologies Explored</p>
-        </div>
-
-        <div class="stat">
-          <h4>100+</h4>
-          <p>Problems Solved</p>
-        </div>
-
-        <div class="stat">
-          <h4>∞</h4>
-          <p>Learning Everyday</p>
-        </div>
-
+        <div class="stat"><h4>04+</h4><p>Projects Completed</p></div>
+        <div class="stat"><h4>05+</h4><p>Technologies Explored</p></div>
+        <div class="stat"><h4>100+</h4><p>Problems Solved</p></div>
+        <div class="stat"><h4>∞</h4><p>Learning Everyday</p></div>
       </div>
 
     </div>
-
   </div>
-
 </section>
 
 
-<!-- RADAR SKILLS SECTION -->
+<!-- ================= EDUCATION ================= -->
+<section id="education" class="education-section">
+
+  <div class="section-intro">
+    <p class="section-label">ACADEMIC LOG</p>
+    <h2>Education</h2>
+  </div>
+
+  <div class="edu-list">
+    <article class="edu-card">
+      <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+      <div class="edu-body">
+        <h3>B.Tech in Computer Science &amp; E-Commerce Technology</h3>
+        <p class="edu-school">VIT Bhopal University</p>
+        <p class="edu-meta">Currently pursuing</p>
+        <p class="edu-desc">
+          Coursework and projects in web development, databases,
+          Java, Python and data analytics.
+        </p>
+      </div>
+    </article>
+
+    <!-- To add more (e.g. Class XII), copy the <article> above and edit the text -->
+  </div>
+</section>
+
+
+<!-- ================= SKILLS ================= -->
 <section id="skills">
 
   <div class="skills-header">
@@ -316,92 +233,47 @@
     <!-- HTML -->
     <div class="radar-card">
       <div class="circle-wrap">
-
         <svg class="circle-svg" width="180" height="180">
-
-          <circle class="bg"
-            cx="90"
-            cy="90"
-            r="70">
-          </circle>
-
-          <circle class="progress html-circle"
-            cx="90"
-            cy="90"
-            r="70">
-          </circle>
-
+          <circle class="bg" cx="90" cy="90" r="70"></circle>
+          <circle class="progress html-circle" cx="90" cy="90" r="70"></circle>
         </svg>
-
         <div class="circle-content">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
           <h3>75%</h3>
         </div>
-
       </div>
-
-      <h4>HTML & CSS</h4>
-      <p>Core Markup & Styling</p>
+      <h4>HTML &amp; CSS</h4>
+      <p>Core Markup &amp; Styling</p>
     </div>
 
     <!-- JS -->
     <div class="radar-card">
       <div class="circle-wrap">
-
         <svg class="circle-svg" width="180" height="180">
-
-          <circle class="bg"
-            cx="90"
-            cy="90"
-            r="70">
-          </circle>
-
-          <circle class="progress js-circle"
-            cx="90"
-            cy="90"
-            r="70">
-          </circle>
-
+          <circle class="bg" cx="90" cy="90" r="70"></circle>
+          <circle class="progress js-circle" cx="90" cy="90" r="70"></circle>
         </svg>
-
         <div class="circle-content">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
           <h3>60%</h3>
         </div>
-
       </div>
-
       <h4>JavaScript</h4>
-      <p>Logic & Interactivity</p>
+      <p>Logic &amp; Interactivity</p>
     </div>
 
     <!-- JAVA -->
     <div class="radar-card">
       <div class="circle-wrap">
-
         <svg class="circle-svg" width="180" height="180">
-
-          <circle class="bg"
-            cx="90"
-            cy="90"
-            r="70">
-          </circle>
-
-          <circle class="progress java-circle"
-            cx="90"
-            cy="90"
-            r="70">
-          </circle>
-
+          <circle class="bg" cx="90" cy="90" r="70"></circle>
+          <circle class="progress java-circle" cx="90" cy="90" r="70"></circle>
         </svg>
-
         <div class="circle-content">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
           <h3>50%</h3>
         </div>
-
       </div>
-
       <h4>Java</h4>
       <p>Programming Language</p>
     </div>
@@ -409,41 +281,24 @@
     <!-- PYTHON -->
     <div class="radar-card">
       <div class="circle-wrap">
-
         <svg class="circle-svg" width="180" height="180">
-
-          <circle class="bg"
-            cx="90"
-            cy="90"
-            r="70">
-          </circle>
-
-          <circle class="progress python-circle"
-            cx="90"
-            cy="90"
-            r="70">
-          </circle>
-
+          <circle class="bg" cx="90" cy="90" r="70"></circle>
+          <circle class="progress python-circle" cx="90" cy="90" r="70"></circle>
         </svg>
-
         <div class="circle-content">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
           <h3>65%</h3>
         </div>
-
       </div>
-
       <h4>Python</h4>
-      <p>Data & Automation</p>
+      <p>Data &amp; Automation</p>
     </div>
 
   </div>
-
 </section>
 
 
-<!-- PROJECTS -->
-<!-- MISSION CONTROL PROJECTS -->
+<!-- ================= PROJECTS ================= -->
 <section id="projects">
 
   <div class="projects-header">
@@ -456,235 +311,139 @@
 
   <div class="projects-grid">
 
-  <!-- PROJECT 1 -->
-  <div class="mission-card">
-    <div class="terminal-top">
-      <div class="terminal-dots">
-        <span class="red"></span>
-        <span class="yellow"></span>
-        <span class="green"></span>
+    <!-- PROJECT 1 -->
+    <div class="mission-card">
+      <div class="terminal-top">
+        <div class="terminal-dots">
+          <span class="red"></span><span class="yellow"></span><span class="green"></span>
+        </div>
+        <div class="system-status"><span class="status-dot"></span>SYSTEM ACTIVE</div>
       </div>
 
-      <div class="system-status">
-        <span class="status-dot"></span>
-        SYSTEM ACTIVE
+      <div class="mission-content">
+        <h3>Campus Course Records Manager</h3>
+        <p class="mission-desc">
+          Academic management system for handling student records,
+          courses, and database operations efficiently.
+        </p>
+
+        <div class="tech-stack">
+          <span>JAVA</span><span>JDBC</span><span>MYSQL</span>
+        </div>
+
+        <div class="mission-stats">
+          <div><small>STATUS</small><strong>ONLINE</strong></div>
+          <div><small>TYPE</small><strong>DESKTOP APP</strong></div>
+          <div><small>BUILD</small><strong>v2.1</strong></div>
+        </div>
+
+        <div class="mission-buttons">
+          <a href="https://github.com/akshansh2404/Project-Statement-Campus-Course-Records-Manager-CCRM-" target="_blank" rel="noopener">VIEW CODE ↗</a>
+        </div>
       </div>
     </div>
 
-    <div class="mission-content">
-
-      <h3>Campus Course Records Manager</h3>
-
-      <p class="mission-desc">
-        Academic management system for handling student records,
-        courses, and database operations efficiently.
-      </p>
-
-      <div class="tech-stack">
-        <span>JAVA</span>
-        <span>JDBC</span>
-        <span>MYSQL</span>
+    <!-- PROJECT 2 -->
+    <div class="mission-card">
+      <div class="terminal-top">
+        <div class="terminal-dots">
+          <span class="red"></span><span class="yellow"></span><span class="green"></span>
+        </div>
+        <div class="system-status"><span class="status-dot"></span>SYSTEM ACTIVE</div>
       </div>
 
-      <div class="mission-stats">
-        <div>
-          <small>STATUS</small>
-          <strong>ONLINE</strong>
+      <div class="mission-content">
+        <h3>Rapid Care Ambulance Booking</h3>
+        <p class="mission-desc">
+          Emergency ambulance booking platform with responsive UI
+          and quick booking workflow simulation.
+        </p>
+
+        <div class="tech-stack">
+          <span>HTML</span><span>CSS</span><span>JAVASCRIPT</span>
         </div>
 
-        <div>
-          <small>TYPE</small>
-          <strong>DESKTOP APP</strong>
+        <div class="mission-stats">
+          <div><small>STATUS</small><strong>ONLINE</strong></div>
+          <div><small>TYPE</small><strong>WEB APP</strong></div>
+          <div><small>BUILD</small><strong>v1.4</strong></div>
         </div>
 
-        <div>
-          <small>BUILD</small>
-          <strong>v2.1</strong>
+        <div class="mission-buttons">
+          <a href="https://github.com/akshansh2404/Rapid-Care-Ambulance-Online-Ambulance-Booking-Service-" target="_blank" rel="noopener">VIEW CODE ↗</a>
         </div>
       </div>
-
-      <div class="mission-buttons">
-        <a href="https://github.com/akshansh2404/Project-Statement-Campus-Course-Records-Manager-CCRM-" target="_blank">
-          VIEW CODE ↗
-        </a>
-      </div>
-
     </div>
+
+    <!-- PROJECT 3 -->
+    <div class="mission-card">
+      <div class="terminal-top">
+        <div class="terminal-dots">
+          <span class="red"></span><span class="yellow"></span><span class="green"></span>
+        </div>
+        <div class="system-status"><span class="status-dot"></span>SYSTEM ACTIVE</div>
+      </div>
+
+      <div class="mission-content">
+        <h3>Weather Intelligence Dashboard</h3>
+        <p class="mission-desc">
+          Dynamic weather application with animated UI,
+          live temperature updates and cloud effects.
+        </p>
+
+        <div class="tech-stack">
+          <span>HTML</span><span>CSS</span><span>JAVASCRIPT</span><span>API</span>
+        </div>
+
+        <div class="mission-stats">
+          <div><small>STATUS</small><strong>ONLINE</strong></div>
+          <div><small>TYPE</small><strong>WEB APP</strong></div>
+          <div><small>BUILD</small><strong>v3.0</strong></div>
+        </div>
+
+        <div class="mission-buttons">
+          <a href="https://github.com/akshansh2404/Weather-Forecast-Dashboard" target="_blank" rel="noopener">VIEW CODE ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 4 -->
+    <div class="mission-card">
+      <div class="terminal-top">
+        <div class="terminal-dots">
+          <span class="red"></span><span class="yellow"></span><span class="green"></span>
+        </div>
+        <div class="system-status"><span class="status-dot"></span>SYSTEM ACTIVE</div>
+      </div>
+
+      <div class="mission-content">
+        <h3>Life Link</h3>
+        <p class="mission-desc">
+          LifeLink is a full-stack web application designed to connect
+          blood and organ donors with people in urgent need.
+        </p>
+
+        <div class="tech-stack">
+          <span>HTML</span><span>CSS</span><span>JAVASCRIPT</span><span>UI/UX</span>
+        </div>
+
+        <div class="mission-stats">
+          <div><small>STATUS</small><strong>DEPLOYED</strong></div>
+          <div><small>TYPE</small><strong>WEB APP</strong></div>
+          <div><small>BUILD</small><strong>v4.2</strong></div>
+        </div>
+
+        <div class="mission-buttons">
+          <a href="https://github.com/akshansh2404/LifeLink" target="_blank" rel="noopener">VIEW CODE ↗</a>
+        </div>
+      </div>
+    </div>
+
   </div>
-
-  <!-- PROJECT 2 -->
-  <div class="mission-card">
-    <div class="terminal-top">
-      <div class="terminal-dots">
-        <span class="red"></span>
-        <span class="yellow"></span>
-        <span class="green"></span>
-      </div>
-
-      <div class="system-status">
-        <span class="status-dot"></span>
-        SYSTEM ACTIVE
-      </div>
-    </div>
-
-    <div class="mission-content">
-
-      <h3>Rapid Care Ambulance Booking</h3>
-
-      <p class="mission-desc">
-        Emergency ambulance booking platform with responsive UI
-        and quick booking workflow simulation.
-      </p>
-
-      <div class="tech-stack">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JAVASCRIPT</span>
-      </div>
-
-      <div class="mission-stats">
-        <div>
-          <small>STATUS</small>
-          <strong>ONLINE</strong>
-        </div>
-
-        <div>
-          <small>TYPE</small>
-          <strong>WEB APP</strong>
-        </div>
-
-        <div>
-          <small>BUILD</small>
-          <strong>v1.4</strong>
-        </div>
-      </div>
-
-      <div class="mission-buttons">
-        <a href="https://github.com/akshansh2404/Rapid-Care-Ambulance-Online-Ambulance-Booking-Service-" target="_blank">
-          VIEW CODE ↗
-        </a>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- PROJECT 3 -->
-  <div class="mission-card">
-    <div class="terminal-top">
-      <div class="terminal-dots">
-        <span class="red"></span>
-        <span class="yellow"></span>
-        <span class="green"></span>
-      </div>
-
-      <div class="system-status">
-        <span class="status-dot"></span>
-        SYSTEM ACTIVE
-      </div>
-    </div>
-
-    <div class="mission-content">
-
-      <h3>Weather Intelligence Dashboard</h3>
-
-      <p class="mission-desc">
-        Dynamic weather application with animated UI,
-        live temperature updates and cloud effects.
-      </p>
-
-      <div class="tech-stack">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JAVASCRIPT</span>
-        <span>API</span>
-      </div>
-
-      <div class="mission-stats">
-        <div>
-          <small>STATUS</small>
-          <strong>ONLINE</strong>
-        </div>
-
-        <div>
-          <small>TYPE</small>
-          <strong>WEB APP</strong>
-        </div>
-
-        <div>
-          <small>BUILD</small>
-          <strong>v3.0</strong>
-        </div>
-      </div>
-
-      <div class="mission-buttons">
-        <a href="https://github.com/akshansh2404/Weather-Forecast-Dashboard" target="_blank">
-          VIEW CODE ↗
-        </a>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- PROJECT 4 -->
-  <div class="mission-card">
-    <div class="terminal-top">
-      <div class="terminal-dots">
-        <span class="red"></span>
-        <span class="yellow"></span>
-        <span class="green"></span>
-      </div>
-
-      <div class="system-status">
-        <span class="status-dot"></span>
-        SYSTEM ACTIVE
-      </div>
-    </div>
-
-    <div class="mission-content">
-
-      <h3>Life Link</h3>
-
-      <p class="mission-desc">
-        LifeLink is a full-stack web application designed to connect blood and organ donors with people in urgent need.
-      </p>
-
-      <div class="tech-stack">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JAVASCRIPT</span>
-        <span>UI/UX</span>
-      </div>
-
-      <div class="mission-stats">
-        <div>
-          <small>STATUS</small>
-          <strong>DEPLOYED</strong>
-        </div>
-
-        <div>
-          <small>TYPE</small>
-          <strong>WEB APP</strong>
-        </div>
-
-        <div>
-          <small>BUILD</small>
-          <strong>v4.2</strong>
-        </div>
-      </div>
-
-      <div class="mission-buttons">
-        <a href="https://github.com/akshansh2404/LifeLink" target="_blank">
-          VIEW CODE ↗
-        </a>
-      </div>
-
-    </div>
-  </div>
-
-</div>
 </section>
 
-<!-- CONTACT -->
+
+<!-- ================= CONTACT ================= -->
 <section class="contact" id="contact">
   <div class="contact-info">
     <p class="section-tag">GET IN TOUCH</p>
@@ -695,32 +454,50 @@
     </p>
 
     <p><strong>Email:</strong> akshanshsrivastva2249w@gmail.com</p>
-    <p><strong>Location:</strong> Noida,Uttar Pradesh</p>
+    <p><strong>Location:</strong> Noida, Uttar Pradesh</p>
   </div>
 
-<form
-  class="contact-form"
-  action="https://formspree.io/f/xgooerek"
-  method="POST"
->
-  <input type="text" name="name" placeholder="Your name" required>
-  <input type="email" name="email" placeholder="Your email" required>
-  <textarea name="message" placeholder="Your message..." required></textarea>
-
-  <button type="submit">Send Message →</button>
-</form>
-
+  <form class="contact-form" action="https://formspree.io/f/xgooerek" method="POST">
+    <input type="text" name="name" placeholder="Your name" required>
+    <input type="email" name="email" placeholder="Your email" required>
+    <textarea name="message" placeholder="Your message..." required></textarea>
+    <button type="submit">Send Message →</button>
+  </form>
 </section>
 
-<!-- FOOTER -->
+</main>
+
+<!-- ================= FOOTER ================= -->
 <footer>
-  <p>© 2026 Portfolio. Built with passion.</p>
+  <p>© 2026 Akshansh Srivastava. Built with passion.</p>
   <div class="footer-links">
-    <a href="#">GitHub</a>
-    <a href="#">LinkedIn</a>
-    <a href="#">Twitter</a>
+    <a href="https://github.com/akshansh2404" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://www.linkedin.com/in/akshansh-srivastava-016335326" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="mailto:akshanshsrivastva2249w@gmail.com">Email</a>
   </div>
 </footer>
+
+<!-- Script goes at the END of body so #skills exists when it runs -->
+<script>
+  (function () {
+    var skills = document.getElementById("skills");
+    if (!skills) return;
+
+    var animated = false;
+
+    function check() {
+      if (animated) return;
+      var top = skills.getBoundingClientRect().top;
+      if (top < window.innerHeight - 100) {
+        skills.classList.add("skills-active");
+        animated = true;
+      }
+    }
+
+    window.addEventListener("scroll", check);
+    check(); // run once on load in case the section is already visible
+  })();
+</script>
 
 </body>
 </html>

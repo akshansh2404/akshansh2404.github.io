@@ -1,0 +1,301 @@
+/* =====================================================
+   about-fix.css
+   Extra styles for: nav, About, Education, footer.
+   Load AFTER your main stylesheet.
+   ===================================================== */
+
+:root {
+  --af-bg-card: #11172b;
+  --af-bg-card-2: #0d1224;
+  --af-border: rgba(120, 140, 255, 0.18);
+  --af-accent: #5b8cff;
+  --af-text: #e6e9f5;
+  --af-muted: #9aa3c0;
+}
+
+html { scroll-behavior: smooth; }
+
+/* ---------- NAV ---------- */
+.top-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px 28px;
+  padding: 16px 20px;
+}
+.top-nav a {
+  color: var(--af-text);
+  text-decoration: none;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  opacity: 0.85;
+  transition: color 0.2s, opacity 0.2s;
+}
+.top-nav a:hover { color: var(--af-accent); opacity: 1; }
+
+/* ---------- ABOUT ---------- */
+.about-section,
+.education-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 24px;
+  color: var(--af-text);
+}
+
+.about-top {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+}
+.about-tag {
+  color: var(--af-accent);
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 0;
+}
+.about-small { color: var(--af-muted); font-size: 0.9rem; }
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.about-init {
+  color: var(--af-accent);
+  font-family: "Courier New", monospace;
+  font-size: 0.85rem;
+  margin: 0 0 12px;
+}
+.about-heading {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin: 0;
+  color: #fff;
+}
+.about-heading span { color: var(--af-accent); }
+
+.heading-line {
+  width: 70px;
+  height: 4px;
+  border-radius: 4px;
+  background: var(--af-accent);
+  margin: 14px 0 24px;
+}
+
+.about-text p {
+  color: var(--af-muted);
+  line-height: 1.8;
+  margin: 0 0 16px;
+  font-size: 1rem;
+}
+.about-text strong { color: #fff; }
+
+.focus-box {
+  margin-top: 28px;
+  padding: 18px 20px;
+  background: var(--af-bg-card);
+  border: 1px solid var(--af-border);
+  border-left: 4px solid var(--af-accent);
+  border-radius: 10px;
+}
+.focus-title {
+  color: var(--af-accent);
+  font-family: "Courier New", monospace;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  margin: 0 0 8px;
+}
+.focus-box p { margin: 0; color: var(--af-text); line-height: 1.6; }
+.focus-box .focus-title { margin-bottom: 8px; }
+
+.connect-section { margin-top: 28px; }
+.connect-title {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  color: var(--af-muted);
+  margin: 0 0 12px;
+}
+.connect-icons { display: flex; gap: 12px; }
+.connect-icons a {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--af-bg-card);
+  border: 1px solid var(--af-border);
+  border-radius: 10px;
+  color: var(--af-accent);
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: transform 0.2s, background 0.2s, color 0.2s;
+}
+.connect-icons a:hover {
+  transform: translateY(-3px);
+  background: var(--af-accent);
+  color: #fff;
+}
+
+/* ---------- ABOUT: right column ---------- */
+.about-right { display: flex; flex-direction: column; gap: 24px; }
+
+.dev-card {
+  background: var(--af-bg-card);
+  border: 1px solid var(--af-border);
+  border-radius: 14px;
+  overflow: hidden;
+}
+.dev-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: var(--af-bg-card-2);
+  border-bottom: 1px solid var(--af-border);
+}
+.dev-top p {
+  margin: 0;
+  font-family: "Courier New", monospace;
+  font-size: 0.8rem;
+  color: var(--af-muted);
+}
+.dev-top .terminal-dots { display: flex; gap: 6px; }
+.dev-top .terminal-dots span {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  display: block;
+  background: #ff5f57;
+}
+.dev-top .terminal-dots span:nth-child(2) { background: #febc2e; }
+.dev-top .terminal-dots span:nth-child(3) { background: #28c840; }
+
+.dev-content { padding: 8px 20px; }
+.dev-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px dashed var(--af-border);
+}
+.dev-row:last-child { border-bottom: none; }
+.dev-row span {
+  font-family: "Courier New", monospace;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: var(--af-accent);
+}
+.dev-row p { margin: 0; color: var(--af-text); text-align: right; }
+
+.dev-footer {
+  margin: 0;
+  padding: 12px 20px;
+  font-family: "Courier New", monospace;
+  font-size: 0.8rem;
+  color: var(--af-muted);
+  border-top: 1px solid var(--af-border);
+}
+
+.work-section h3 {
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  color: #fff;
+  margin: 0 0 14px;
+}
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+.work-card {
+  background: var(--af-bg-card);
+  border: 1px solid var(--af-border);
+  border-radius: 12px;
+  padding: 18px;
+  text-align: center;
+  transition: transform 0.2s, border-color 0.2s;
+}
+.work-card:hover { transform: translateY(-4px); border-color: var(--af-accent); }
+.work-card i { font-size: 1.5rem; color: var(--af-accent); margin-bottom: 8px; }
+.work-card p { margin: 0; font-size: 0.9rem; color: var(--af-text); }
+
+.stats-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+.stat {
+  background: var(--af-bg-card);
+  border: 1px solid var(--af-border);
+  border-radius: 12px;
+  padding: 16px 8px;
+  text-align: center;
+}
+.stat h4 { margin: 0 0 4px; font-size: 1.4rem; color: #fff; }
+.stat p { margin: 0; font-size: 0.72rem; color: var(--af-muted); line-height: 1.3; }
+
+/* ---------- EDUCATION ---------- */
+.education-section { padding-top: 40px; }
+.section-intro { margin-bottom: 28px; }
+.section-label {
+  color: var(--af-accent);
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  margin: 0 0 6px;
+}
+.section-intro h2 { margin: 0; font-size: clamp(1.8rem, 3.5vw, 2.4rem); color: #fff; }
+
+.edu-list { display: grid; gap: 18px; }
+.edu-card {
+  display: flex;
+  gap: 18px;
+  padding: 24px;
+  background: var(--af-bg-card);
+  border: 1px solid var(--af-border);
+  border-radius: 14px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.edu-card:hover { border-color: var(--af-accent); transform: translateY(-3px); }
+.edu-icon {
+  flex: 0 0 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: rgba(91, 140, 255, 0.15);
+  color: var(--af-accent);
+  font-size: 1.3rem;
+}
+.edu-body h3 { margin: 0 0 6px; color: #fff; font-size: 1.1rem; }
+.edu-school { margin: 0; color: var(--af-accent); font-weight: 600; }
+.edu-meta { margin: 4px 0 10px; color: var(--af-muted); font-size: 0.85rem; }
+.edu-desc { margin: 0; color: var(--af-muted); line-height: 1.6; }
+
+/* ---------- FOOTER ---------- */
+footer {
+  text-align: center;
+  padding: 32px 20px;
+  color: var(--af-muted);
+}
+footer p { margin: 0 0 12px; }
+.footer-links { display: flex; justify-content: center; gap: 22px; flex-wrap: wrap; }
+.footer-links a { color: var(--af-text); text-decoration: none; }
+.footer-links a:hover { color: var(--af-accent); }
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 900px) {
+  .about-grid { grid-template-columns: 1fr; gap: 36px; }
+  .stats-box { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 520px) {
+  .about-section, .education-section { padding: 56px 16px; }
+  .work-grid { grid-template-columns: 1fr 1fr; }
+  .edu-card { flex-direction: column; }
+  .dev-row { flex-direction: column; align-items: flex-start; gap: 4px; }
+  .dev-row p { text-align: left; }
+}
